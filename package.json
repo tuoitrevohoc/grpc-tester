@@ -2,8 +2,10 @@
   "name": "grpc-tester",
   "displayName": "gRPC Tester",
   "description": "Test gRPC endpoints efficiently within VSCode",
-  "version": "0.0.1",
-  "icon": "media/icon.svg",
+  "version": "0.0.2",
+  "repository": "https://github.com/tuoitrevohoc/grpc-tester",
+  "icon": "media/icon.png",
+  "publisher": "khiemtran", 
   "engines": {
     "vscode": "^1.80.0"
   },

@@ -15,7 +15,10 @@ Test gRPC endpoints efficiently directly within VS Code.
   - Shared Endpoint and Proto configurations per Service.
 - **Execution**: Run requests and view responses (with JSON syntax highlighting) or errors immediately.
 
+
 ## Usage
+
+![How to use](media/How%20to%20use.gif)
 
 1.  **Open the Tester**:
     - Run the command `gRPC-Tester: See all tests` from the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`).
@@ -38,43 +41,3 @@ Test gRPC endpoints efficiently directly within VS Code.
     - The test is saved to `.grpc-tests/<ServiceName>.json`. 
     - **Note**: The `Endpoint` and `Proto File` selection are shared across all tests in the same Service.
 
-## Publishing the Extension
-
-To publish this extension to the VS Code Marketplace:
-
-### 1. Prerequisites
-
-- Install [Node.js](https://nodejs.org/).
-- Install `vsce` (VS Code Extensions CLI):
-  ```bash
-  npm install -g @vscode/vsce
-  ```
-- Create a [Microsoft Publisher ID](https://marketplace.visualstudio.com/manage).
-
-### 2. Login
-
-```bash
-vsce login <publisher id>
-```
-
-### 3. Package
-
-To create a `.vsix` file for manual installation:
-
-```bash
-vsce package
-```
-
-### 4. Publish
-
-To publish directly to the Marketplace:
-
-```bash
-vsce publish
-```
-
-### 5. Versioning
-Remember to update the `version` in `package.json` before publishing a new release:
-```bash
-npm version patch # or minor/major
-```
